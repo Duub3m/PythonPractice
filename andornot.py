@@ -1,4 +1,3 @@
-
 checking = float(input("How much is in your checking account: "))
 savings = float(input("How much is in your savings account"))
 balance = checking + savings
