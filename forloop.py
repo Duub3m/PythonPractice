@@ -1,7 +1,12 @@
 import time
+import threading 
+from threading import Thread
+
+seconds = 10
 
 def countdown():
-    for seconds in range(10,0,-2):
+    global seconds
+    for seconds in range(10,-1,-1):
         print(seconds)
         time.sleep(1)
 
@@ -9,11 +14,16 @@ def countdown():
 print("You have 10 seconds to answer the question: ")
 answer = int(input("What is 2 + 2: "))
 countdown()
-if answer == 2:
+
+if answer == 4:
     print("Congrats, you diffused the bomb")
     exit()
-else:
-    print("You failed to diffuse the bomb")
+elif answer != 4:
+    print("Wrong, you failed to diffuse the bomb")
+    exit()
+elif seconds == 0:
+    print("You ran out of time")
+    exit()
 
 
 
