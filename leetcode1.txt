@@ -1,0 +1,37 @@
+Problem: Find Target Indices After Sorting Array
+Difficulty: Easy
+
+Description:
+You are given an array of integers nums and a target integer target. First, sort the array in non-decreasing order, and then find the indices where the target appears in the sorted array. Return these indices as a list.
+
+If the target does not appear in the array, return an empty list.
+
+Example 1:
+
+Input:
+
+nums = [1, 2, 5, 2, 3]
+target = 2
+Output:
+
+[1, 2]
+Explanation:
+After sorting, nums becomes [1, 2, 2, 3, 5]. The target 2 appears at indices 1 and 2.
+
+Example 2:
+
+Input:
+
+nums = [1, 2, 5, 2, 3]
+target = 4
+Output:
+
+[]
+Explanation:
+After sorting, nums becomes [1, 2, 2, 3, 5]. The target 4 does not appear in the array.
+
+Constraints:
+
+1 <= len(nums) <= 100
+-100 <= nums[i] <= 100
+-100 <= target <= 100

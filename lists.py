@@ -1,11 +1,17 @@
-# List (] = mutable, most flexible
-# Tuple () = immutable, faster
-# = mutable (add/remove), unordered,
+# List () = changeable, most flexible
+
+# Append - adds the element to the end of the list
+# Insert - adds the element to the beginning of the list
+# Remove - removes the element from the list
+# Pop - remove an element at a given index
+# Clear - removes all the elements from the list
+
+# Tuple () = non-changeable, faster
+
+# Set {} = mutchangeable (only add/remove), unordered,
 # NO duplicates, best for membership testing
 
-# Append - adds to the end of the list
-# Insert - adds to the beginning of the list
-# Remove - removes an item from the list
+
 
 fruits = ["Orange", "Banana", "Coconut"]
 
@@ -32,7 +38,15 @@ def program_status(input_program_status):
     elif input_program_status == "No":
         status == True
 
+
+
 print(fruits)
+
+check = input("Search for a fruit")
+
+if check in fruits:
+    index = fruits.index(check)
+    print(f"We found {check} in the list at index {index}")
 
 
 
