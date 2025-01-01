@@ -1,10 +1,16 @@
-list = [5,2,4,7,8,3,2,5,7,3,6,8,9,3,2]
+list = []
 
-ordered_list = []
+def menu(option):
+    global list
+    match option:
+        case "O":
+            print("you chose the order your list")
+        case "B": 
+            print("You chose the make your list backwards")
+        case "T":
+            print("You chose to multiply your list times two")
+        case "I":
+            print("You chose to get the indicies of the list")
 
-backwards_list = []
-
-list_times_two = []
-
-list
+option = input("What would you like to do with the list")
 
