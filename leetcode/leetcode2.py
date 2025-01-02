@@ -19,3 +19,5 @@ target = 7
 solution = Solution()  # Create an instance of Solution
 result = solution.twoSum(nums, target)  # Call the method
 print(result)  # Print the result
+
+

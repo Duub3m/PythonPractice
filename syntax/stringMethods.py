@@ -1,6 +1,11 @@
 # .find() - > Returns the first occurence of a given character
 # .rfind() - > Returns the last occurence of a given character
 
+import re
+
+string = "123-456-7890"
+
+
 name = input("Enter your full name: ")
 print(name)
 
